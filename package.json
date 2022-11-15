@@ -24,6 +24,7 @@
     "simplelightbox": "^2.10.4"
   },
   "devDependencies": {
+    "@babel/parser": "^7.20.3",
     "@parcel/transformer-sass": "^2.6.0",
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
