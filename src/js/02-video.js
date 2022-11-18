@@ -11,4 +11,8 @@ localStorage.setItem('videoplayer-current-time', data.seconds);
 
 player.on('timeupdate', throttle(onPlay, 1000));
 
-player.setCurrentTime(localStorage.getItem('videoplayer-current-time'));
+const currentTime = localStorage.getItem('videoplayer-current-time');
+
+if (currentTime) {
+  player.setCurrentTime(currentTime);
+}
